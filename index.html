@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Moving Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- onSite Load Content -->
+
+    <div class="main">
+        <div id="form_div" class="z-depth-5">
+            <!-- title -->
+            <div id="header_info">Enter Details</div>
+
+            <!-- input form -->
+            <form id="form-container" class="form-container" >
+                <div class="ip_form"><input type="text" id="street" placeholder="Street" class="ip" size="48px"></div>
+                <div class="ip_form"><input type="text" id="city" placeholder="City" class="ip" size="48px"></div>
+                <div class="bt_form">
+                    <button class="btn waves-effect waves-light"  id="submit-btn" style="cursor: pointer">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+<!-- after submit content -->
+    <div class="load">
+
+        <h1>Loading data ... </h1>
+
+
+    </div>
+
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+</body>
+</html>

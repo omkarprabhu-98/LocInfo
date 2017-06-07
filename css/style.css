@@ -1,0 +1,97 @@
+
+
+body{
+
+    overflow: hidden;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* onSite Load Content */
+
+
+
+/* main div */
+.main{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #1f8fc1;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* form div */
+#form_div{
+    padding: 60px;
+    background-color: white;
+}
+
+/* title text for form*/
+#header_info{
+    padding: 30px;
+    font-size: 40px;
+    color: #2e3d49;
+}
+
+
+/* input field for form */
+
+.ip_form{
+    padding:15px;
+    width: 100%;
+}
+
+.ip{
+
+    padding:20px;
+}
+
+#street, #city{
+    width: 100%;
+    height: 44px;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* button for form */
+.bt_form{
+    padding:5px;
+}
+
+#submit-btn{
+    background-color: #02b3e4;
+    size: 50px;
+    min-width: 207px;
+    height: 44px;
+}
+
+
+
+
+
+/* after submit content */
+
+
+.load{
+    display: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
