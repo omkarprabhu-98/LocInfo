@@ -3071,11 +3071,11 @@ td, th {
 .collection a.collection-item {
   display: block;
   transition: .25s;
-  color: #26a69a;
+  color: #1f8fc1;
 }
 
 .collection a.collection-item:not(.active):hover {
-  background-color: #ddd;
+  background-color: #1f8fc1;color: #FFFFFF;
 }
 
 .collection.with-header .collection-header {
