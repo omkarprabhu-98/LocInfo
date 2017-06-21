@@ -5,33 +5,66 @@ $(function() {
 var city ;
 var street;
 
-$('.form-container').submit(function(){
+$('#submit-btn').click(function(){
+
+
+    var that = $(this);
+    that.attr('disabled', true);
+    var timer = setTimeout(function(){
+        that.attr('disabled', false);
+    }, 1000);
 
     // get details from input form
     street = $('#street').val();
     city = $('#city').val();
+    $('.expandable').addClass('active');
 
     setTimeout(
         function() {
 
+            // sweep transition
+            $('.expandable').remove();
+
+
+            // display result page
+            $('.load').css('display','block');
+            $('body').css('overflow','scroll');
+
+
+            // load data
+            loadData(city,street);
+
         },
-        5000);
+        1000);
 
-    // remove onSite load page
-    $('.main').remove();
+    setTimeout(
+        function() {
 
-    // display result page
-    $('.load').css('display','block');
-    $('body').css('overflow','scroll');
+            // sweep transition
+            $('.main').remove();
 
-    // load data
-    loadData(city,street)
+
+
+
+        },
+        999);
+
+
+
+
+
+
+
+
 });
 
 
 
 
 });
+
+
+
 
 
 function loadData(city,  street) {
