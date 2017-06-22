@@ -19,6 +19,7 @@ $('#submit-btn').click(function(){
     city = $('#city').val();
     $('.expandable').addClass('active');
 
+
     setTimeout(
         function() {
 
@@ -37,17 +38,24 @@ $('#submit-btn').click(function(){
         },
         1000);
 
+    // remove form field to display result
     setTimeout(
         function() {
 
             // sweep transition
             $('.main').remove();
 
-
-
-
         },
         999);
+
+    // fade in transition
+    setTimeout(
+        function() {
+
+            $('.load').addClass("active");
+
+        },
+        1500);
 
 
 

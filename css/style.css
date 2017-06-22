@@ -33,6 +33,9 @@ div{
     justify-content: center;
     transition: all 1s;
 }
+
+
+/* transition div */
 .expandable{
     right: 0;
     bottom: 0;
@@ -43,8 +46,6 @@ div{
     background-color: #1f8fc1;
     position: fixed;
     transition: all 3s;
-
-
 }
 
 .expandable.active{
@@ -52,6 +53,9 @@ div{
     background-color: #FFFFFF;
 
 }
+
+
+
 
 /* form div */
 #form_div{
@@ -68,7 +72,6 @@ div{
 
 
 /* input field for form */
-
 .ip_form{
     padding:15px;
     width: 100%;
@@ -85,6 +88,7 @@ div{
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 
 /* button for form */
@@ -113,7 +117,14 @@ div{
     align-items: center;
     align-content: center;
     text-align: center;
+    transition: all .5s ease-in;
+    opacity: .1;
 }
+/* fade in effect g*/
+.load.active{
+    opacity:1;
+}
+
 
 .parallax{
     background-color: #1f8fc1 ;
